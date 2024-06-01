@@ -1,3 +1,4 @@
+import './App.css'
 import Footer from './Components/Footer/Footer'
 import Instructor from './Components/Instructor/Instructor'
 import HomeSecondPart from './Components/Home_part/HomeSecondPart'
