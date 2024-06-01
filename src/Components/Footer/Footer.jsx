@@ -3,6 +3,7 @@ import "./Footer.css"
 import logo from './logo.png'
 import newlogo from './newlogo.png'
 import newlogo1 from './newlogo1.png'
+import copywrite from './copywrite.jpg'
 
 function Footer() {
   return (
@@ -62,9 +63,13 @@ function Footer() {
           <img src={logo} className='w-auto h-12'/>
           
           <div className=' flex gap-2 justify-center items-center text-xl text-white'>
-          <img src={newlogo} className='w-auto h-12'/>
-            <img src={newlogo1} className='w-auto h-12'/>Copyright By Hyper V Solutions  |  All Rights Reserved  | SBE DBE Logo
+          Copyright<span className=''><img src={copywrite} className=' h-5 w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved  | SBE DBE Logo
+          
 </div>
+<div className=' flex '>
+          <img src={newlogo} className='w-auto h-12'/>
+            <img src={newlogo1} className='w-auto h-12'/>
+          </div>
         </div>
       </div>
     </>
