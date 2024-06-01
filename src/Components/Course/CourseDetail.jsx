@@ -4,13 +4,14 @@ import './CourseDetail.css'
 const CourseDetail = ({ course }) => {
   return (
     <>
+    <div id="course">
     <h1 className=" text-5xl font-bold text-left px-5 md:px-16 py-5">Explore Popular Courses</h1>
       <div className=" border-2 border-white px-5 md:px-16 py-5 bg-white text-black md:grid md:grid-cols-3 gap-3 ">
         
         {course.map((card, index) => (
           <div key={index}>
-            <div className=" flex flex-col gap-4 border-2 px-2 py-4 rounded-xl border-white shadow-md shadow-slate-400 " id='cardcourse'>
-              <img src={card.img} className=" h-50 w-50" />
+            <div className=" flex flex-col h-[500px] justify-between gap-4 border-2 px-2 py-4 rounded-xl border-white shadow-md shadow-slate-400 " id='cardcourse'>
+              <img src={card.img} className=" w-[100%] h-[50%]" />
               <div className=" flex gap-2 ">
                 <img src={card.icon} />
                 <p className=" text-2xl font-bold">{card.title}</p>
@@ -22,8 +23,8 @@ const CourseDetail = ({ course }) => {
               </div>
               <div className=" flex justify-around">
                 <div className=" font-bold">
-                <button className=" border-2 px-3 py-1 bg-orange-300 text-black hover:bg-orange-600 rounded-xl">Design</button>
-                <button className=" border-2 px-3 py-1 bg-orange-300 text-black hover:bg-orange-600 rounded-xl">Development</button>
+                <button className=" border-2 px-3 py-1 bg-orange-300 text-black hover:bg-orange-600 rounded-xl">{card.btn1}</button>
+                <button className=" border-2 px-3 py-1 bg-orange-300 text-black hover:bg-orange-600 rounded-xl">{card.btn2}</button>
                 </div>
                 
                 <p className=" font-bold text-xl">${card.price}</p>
@@ -38,6 +39,8 @@ const CourseDetail = ({ course }) => {
         <button className=" px-3 py-3 bg-red-500 hover:bg-black text-white rounded-xl text-center">
             Browse All Courses
         </button>
+        </div>
+
         </div>
     </>
   );

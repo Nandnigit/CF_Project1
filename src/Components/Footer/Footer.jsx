@@ -1,5 +1,8 @@
 import React from 'react'
 import "./Footer.css"
+import logo from './logo.png'
+import newlogo from './newlogo.png'
+import newlogo1 from './newlogo1.png'
 
 function Footer() {
   return (
@@ -37,7 +40,6 @@ function Footer() {
                     <div className=' hover:text-orange-500 hover:pl-1'>Ticketing</div>
                 </div>
             </div>
-            
             </div>
             <div className=' m-3 flex flex-col gap-4 md:w-[30%]'> 
             <div className=' font-bold text-2xl'>Support</div>
@@ -52,12 +54,16 @@ function Footer() {
                 <div><i className="fa-solid fa-globe border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white hover:bg-orange-500"></i></div>
                 <div><i className="fa-brands fa-whatsapp border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white hover:bg-orange-500"></i></div>
             </div>
+            
             </div>
         </div>
         <hr/>
         <div className=' flex flex-col md:flex-row justify-around py-14'>
-          <div className=' text-white font-bold text-3xl'>E-PORA.</div>
-          <div className=' text-xl text-white'>Copyright © Uxaction 2024, All Rights Reserved
+          <img src={logo} className='w-auto h-12'/>
+          
+          <div className=' flex gap-2 justify-center items-center text-xl text-white'>
+          <img src={newlogo} className='w-auto h-12'/>
+            <img src={newlogo1} className='w-auto h-12'/>Copyright By Hyper V Solutions  |  All Rights Reserved  | SBE DBE Logo
 </div>
         </div>
       </div>

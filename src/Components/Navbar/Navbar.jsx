@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './Navbar.css'
+import logo from './logo.png'
 const Navbar = ()=>{
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu=()=>{
@@ -12,17 +13,15 @@ const Navbar = ()=>{
       <nav className="  px-4 py-8">
       <div className="container  flex justify-around">
         <div className='flex gap-4'>
-        {/* <div className="text-white text-xl md:text-4xl font-bold">
-          E-PORA.
-          </div> */}
           <div>
-          <img src="https://e-pora-next.vercel.app/assets/img/logo/logo.png"/>
+          <img src={logo} className=' w-full h-12'/>
           </div>
         
+        
           <div className='hidden md:block'>
-          <button className=' border-2 px-3 py-2 bg-orange-700 border-orange-700 text-white text-xl rounded-xl'>
+          <a href='#course'><button className=' border-2 px-3 py-2 bg-orange-700 border-orange-700 text-white text-xl rounded-xl'>
             Categories
-          </button>
+          </button></a>
           </div>
         </div>
         
