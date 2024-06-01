@@ -56,7 +56,7 @@ const CardSlider = ({ cards }) => {
   };
 
   return (
-    <div className="container md:mx-auto px-4 overflow-x-hidden md:overflow-visible">
+    <div className="container md:mx-auto px-7 overflow-x-hidden ">
       <Slider {...settings}>
         {cards.map((card, index) => (
           <div key={index} className="md:p-4">
