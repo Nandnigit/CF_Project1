@@ -3,7 +3,7 @@ import React from 'react'
 function WhyChooseUsComp() {
   return (
     <>
-     <div className=' bg-white py-9'>
+     <div className=' bg-white py-9 px-6 md:px-16'>
         <div className=' flex flex-col gap-3 md:flex-row md:gap-40 px-6 align-middle'>
             <div>
                 <img src="https://e-pora-next.vercel.app/assets/img/bg/choose-img-01.jpg"/>

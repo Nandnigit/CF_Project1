@@ -4,14 +4,14 @@ import './CourseDetail.css'
 const CourseDetail = ({ course }) => {
   return (
     <>
-    <h1 className=" text-5xl font-bold text-left px-5 py-5">Explore Popular Courses</h1>
-      <div className=" border-2 border-white px-5 py-5 bg-white text-black md:grid md:grid-cols-3 gap-3 ">
+    <h1 className=" text-5xl font-bold text-left px-5 md:px-16 py-5">Explore Popular Courses</h1>
+      <div className=" border-2 border-white px-5 md:px-16 py-5 bg-white text-black md:grid md:grid-cols-3 gap-3 ">
         
         {course.map((card, index) => (
           <div key={index}>
             <div className=" flex flex-col gap-4 border-2 px-2 py-4 rounded-xl border-white shadow-md shadow-slate-400 " id='cardcourse'>
               <img src={card.img} className=" h-50 w-50" />
-              <div className=" flex gap-2 justify-between">
+              <div className=" flex gap-2 ">
                 <img src={card.icon} />
                 <p className=" text-2xl font-bold">{card.title}</p>
               </div>

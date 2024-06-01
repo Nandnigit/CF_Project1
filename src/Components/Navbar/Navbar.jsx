@@ -9,14 +9,18 @@ const Navbar = ()=>{
 
   return (
     <>
-      <nav className="  p-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <nav className="  px-4 py-8">
+      <div className="container  flex justify-around">
         <div className='flex gap-4'>
-        <div className="text-white text-xl md:text-4xl font-bold">
+        {/* <div className="text-white text-xl md:text-4xl font-bold">
           E-PORA.
+          </div> */}
+          <div>
+          <img src="https://e-pora-next.vercel.app/assets/img/logo/logo.png"/>
           </div>
+        
           <div className='hidden md:block'>
-          <button className=' border-2 px-3 py-3 bg-orange-700 border-orange-700 text-white text-xl rounded-xl'>
+          <button className=' border-2 px-3 py-2 bg-orange-700 border-orange-700 text-white text-xl rounded-xl'>
             Categories
           </button>
           </div>

@@ -6,15 +6,21 @@ import HomeFirstPart from './Components/Home_part/HomeFirstPart'
 import Navbar from './Components/Navbar/Navbar'
 import Course from './Components/Course/Course'
 import WhyChooseUsComp from './Components/Course/WhyChooseUsComp'
+import AboutOurCourses from './Components/About/About'
+import Categroiesdetails from './Components/Top Categories/Categroiesdetails'
+import Categrories from './Components/Top Categories/Categrories'
 
 function App() {
   
 
   return (
     <>
-    <Navbar/>
+    
+    <Navbar/> 
     <HomeFirstPart/>
     <HomeSecondPart/>
+    <AboutOurCourses/>
+    <Categrories/>
     <Course/>
     <WhyChooseUsComp/>
     <Instructor/>

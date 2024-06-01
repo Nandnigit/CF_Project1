@@ -19,7 +19,7 @@ function HomeSecondPart(props) {
     ];
   return (
     <>
-      <div className=' flex flex-col gap-5 justify-center text-center py-24 px-5' id="provideCards">
+      <div className=' flex flex-col gap-5 justify-center text-center py-24 px-5 md:px-16' id="provideCards">
             <div className=' text-orange-500 text-xl font-bold py-5'>What we Offer</div>
             <div className=' font-bold text-4xl'> For Your Future Learning.</div>
             <ProvideCards provideecards={provideecards}/>

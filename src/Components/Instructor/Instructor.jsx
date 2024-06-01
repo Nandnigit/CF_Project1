@@ -20,13 +20,13 @@ function Instructor(props) {
   return (
     <>
 
-      <h1 className="text-5xl font-bold px-14 my-8">Our Expert Instructor</h1>
+      <h1 className="text-5xl font-bold px-16 my-8">Our Expert Instructor</h1>
       <CardSlider cards={cards} />
       <div className=' flex justify-center'>
       <button className=' bg-red-500 hover:bg-black text-white px-4 py-4 rounded-xl text-center'>All Instructor</button>
       </div>
       
-      <div className=' flex flex-col gap-5  my-5 px-5 py-5'>
+      <div className=' flex flex-col gap-5  my-5 px-5 md:px-16 py-5'>
         <div className=' flex flex-col gap-5 justify-center text-center'>
             <div className=' text-orange-500 text-xl font-bold'>Join with us</div>
             <div className=' font-bold text-4xl'> Which one is suitable for you?</div>

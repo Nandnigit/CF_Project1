@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
+import image from './image.png'
 import CourseDetail from './CourseDetail';
-
 
 function Course(props) {
   const course =[
@@ -12,10 +12,14 @@ function Course(props) {
     { img:"https://e-pora-next.vercel.app/assets/img/course/course-thumb-04.jpg",icon:"https://e-pora-next.vercel.app/assets/img/icon/course-avata-04.png",title:"Complete Web Design from Figma Freelancing",classes:"28",students:"200",price:"20.00",rating:"4.7"},
     { img:"https://e-pora-next.vercel.app/assets/img/course/course-thumb-05.jpg",icon:"https://e-pora-next.vercel.app/assets/img/icon/course-avata-05.png",title:"Dreamweaver - Coding your first website using",classes:"28",students:"200",price:"20.00",rating:"4.7"},
     { img:"https://e-pora-next.vercel.app/assets/img/course/course-thumb-06.jpg",icon:"https://e-pora-next.vercel.app/assets/img/icon/course-avata-06.png",title:"How to Write Great Web Content - Better Search!",classes:"28",students:"200",price:"20.00",rating:"4.7"},
+    { img:"",icon:"https://e-pora-next.vercel.app/assets/img/icon/course-avata-04.png",title:"Complete Electrician course ",classes:"35",students:"51",price:"19.47",rating:"4.7"},
+    { img:"",icon:"https://e-pora-next.vercel.app/assets/img/icon/course-avata-04.png",title:"Complete Plumbing course",classes:"37",students:"63",price:"25.99",rating:"4.7"},
+    { img:"",icon:"https://e-pora-next.vercel.app/assets/img/icon/course-avata-04.png",title:"Hospitality Marketing course",classes:"42",students:"36",price:"29.99",rating:"4.7"},
+    
   ];
   return (
     <>
-      <CourseDetail course={course}/>
+      <CourseDetail course={course} />
     </>
   )
 }
