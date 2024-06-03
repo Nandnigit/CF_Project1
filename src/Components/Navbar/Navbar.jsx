@@ -100,7 +100,7 @@ const Navbar = () => {
               )}
             </div>
             <div className="relative">
-              <input type="search" placeholder="Search Courses" className="bg-white rounded-2xl px-4 py-2 pl-10" />
+              <input type="search" placeholder="Search Courses" className="bg-white rounded-full px-3 py-3 pl-10" />
               <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M10 2a8 8 0 106.32 13.906l4.387 4.386a1 1 0 01-1.414 1.415l-4.386-4.387A8 8 0 1010 2zM4 10a6 6 0 1111.5 3.134A8.038 8.038 0 0010 16a8.038 8.038 0 00-4.5-2.866A6 6 0 014 10z" clipRule="evenodd"></path>
               </svg>

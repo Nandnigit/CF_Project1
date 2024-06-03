@@ -1,6 +1,7 @@
 import React from 'react'
 import CardSlider from './CardSlider'
 import SecondCardSlider from './SecondCardSlider'
+import '../Navbar/Navbar.css'
 
 function Instructor(props) {
     const cards = [
@@ -23,7 +24,7 @@ function Instructor(props) {
       <h1 className="text-5xl font-bold px-16 my-8">Our Expert Instructor</h1>
       <CardSlider cards={cards} />
       <div className=' flex justify-center'>
-      <button className=' bg-red-500 hover:bg-black text-white px-4 py-4 rounded-xl text-center'>All Instructor</button>
+      <button className='  hover:bg-black text-white px-4 py-4 rounded-xl text-center' id='btnnav'>All Instructor</button>
       </div>
       
       <div className=' flex flex-col gap-5  my-5 px-5 md:px-16 py-5'>

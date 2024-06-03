@@ -59,14 +59,7 @@ const CardSlider = ({ cards }) => {
     <div className="container md:mx-auto px-7 overflow-x-hidden ">
       <Slider {...settings}>
         {cards.map((card, index) => (
-          // <div key={index} className="md:p-4">
-          //   <div className="bg-white rounded-lg shadow-lg p-2 md:p-6">
-          //     <img src={card.img} alt={card.name} className="w-full h-full object-cover mb-2 rounded-lg " />
-          //     <p className="text-black text-center font-bold text-xl">{card.name}</p>
-          //     <p className="text-gray-700 text-center text-lg">{card.description}</p>
-          //   </div>
-
-          // </div>
+          
           <div key={index} className="md:p-4">
   <div className="bg-white rounded-lg shadow-lg p-2 md:p-6 relative">
     <div className="overflow-hidden rounded-lg">
