@@ -3,3 +3,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.flip-container {
+    perspective: 1000px;
+  }
+  
+  .flip {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-container:hover .flip {
+    transform: rotateY(180deg);
+  }
+  
+  .flip img {
+    backface-visibility:visible;
+  }
+  
