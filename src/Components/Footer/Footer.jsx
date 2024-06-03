@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import logo from './logo.png'
+import logo from './logo.jpg'
 import newlogo from './newlogo.png'
 import newlogo1 from './newlogo1.png'
 import copywrite from './copywrite.jpg'

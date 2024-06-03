@@ -10,7 +10,7 @@ const ProvideCards = ({provideecards}) => {
           
 <div key={index} className="p-4">
   <div className="bg-white border-2 border-white rounded-lg shadow-lg flex flex-col gap-4 p-6 card-container">
-    <div className="border-2 px-6 py-5 rounded-full w-fit  bg-green-900 text-white hover:bg-orange-500 lift-up">
+    <div className="border-2 px-6 py-5 rounded-full w-fit   text-white hover:bg-orange-500 lift-up" id='imgprovide'>
       <i className={card.img}></i>
     </div>
     <p className="text-black text-left font-bold text-2xl">{card.title}</p>

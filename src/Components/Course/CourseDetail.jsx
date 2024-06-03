@@ -1,5 +1,6 @@
 import React from "react";
 import './CourseDetail.css'
+import '../Navbar/Navbar.css'
 
 const CourseDetail = ({ course }) => {
   return (
@@ -70,10 +71,10 @@ const CourseDetail = ({ course }) => {
     <p><i className="fa-solid fa-user border-2 rounded-full px-2 py-1 text-orange-600 bg-orange-200 border-orange-200"></i>{card.students} Students</p>
     <p><i className="fa-solid fa-star text-orange-600"></i>{card.rating}</p>
   </div>
-  <div className="flex justify-around">
-    <div className="font-bold">
-      <button className="border-2 px-3 py-1 bg-orange-300 text-black hover:bg-orange-600 rounded-xl">{card.btn1}</button>
-      <button className="border-2 px-3 py-1 bg-orange-300 text-black hover:bg-orange-600 rounded-xl">{card.btn2}</button>
+  <div className="flex gap-2 justify-around">
+    <div className="font-bold flex gap-2" id='btncourse'>
+      <button className=" px-3 py-1 bg-orange-100 text-black hover:bg-orange-400 rounded-xl">{card.btn1}</button>
+      <button className=" px-3 py-1 bg-orange-100 text-black hover:bg-orange-400 rounded-xl">{card.btn2}</button>
     </div>
     <p className="font-bold text-xl">${card.price}</p>
   </div>
@@ -86,7 +87,7 @@ const CourseDetail = ({ course }) => {
         
       </div>
       <div className=" flex justify-center">
-        <button className=" px-3 py-3 bg-red-500 hover:bg-black text-white rounded-xl text-center">
+        <button className=" px-3 py-3  hover:bg-black text-white rounded-xl text-center" id='btnnav'>
             Browse All Courses
         </button>
         </div>

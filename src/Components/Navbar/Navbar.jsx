@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import logo from './logo.png';
+import logo from './logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,21 +21,21 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="px-4 py-8 flex justify-center">
+      <nav className="px-4 py-4 flex justify-center text-black">
         <div className="container flex justify-between items-center">
           <div className="flex gap-4">
             <div>
-              <img src={logo} className="w-full h-12" alt="Logo" />
+              <img src={logo} className="w-full h-16  rounded-full shadow-lg shadow-purple-500" alt="Logo" />
             </div>
             <div className="hidden md:block">
               <a href="#course">
-                <button className="px-3 py-2  text-white text-xl rounded-xl" id='btnnav'>
+                <button className="px-3 py-4  text-white text-xl rounded-xl" id='btnnav'>
                   Categories
                 </button>
               </a>
             </div>
           </div>
-          <div className="hidden md:flex md:gap-4 items-center">
+          <div className="hidden md:flex md:gap-4 items-center ">
             <div className="relative">
               <button onClick={() => toggleDropdown('home')} className="text-white hover:text-gray-300 text-xl">
                 Home<i className="fa fa-caret-down p-2"></i>

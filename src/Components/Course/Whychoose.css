@@ -56,7 +56,8 @@
     animation-name: slideInBottom;
   }
   #iocnsdiv i{
-    background-color: #245d51;
+    /* background-color: #245d51; */
+    background-color: #343456;
   }
   #btnnav{
     background-color: #ff6652;
