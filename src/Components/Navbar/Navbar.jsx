@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <a href="#course">
-                <button className="border-2 px-3 py-2 bg-orange-700 border-orange-700 text-white text-xl rounded-xl">
+                <button className="px-3 py-2  text-white text-xl rounded-xl" id='btnnav'>
                   Categories
                 </button>
               </a>

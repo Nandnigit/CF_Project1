@@ -55,4 +55,9 @@
     right: 10%;
     animation-name: slideInBottom;
   }
-  
+  #iocnsdiv i{
+    background-color: #245d51;
+  }
+  #btnnav{
+    background-color: #ff6652;
+}
