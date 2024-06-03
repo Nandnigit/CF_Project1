@@ -1,12 +1,13 @@
 nav{
     /* background-color: #245d51; */
-    background-color: #343456;
-    /* background-color: rgba(255, 255, 255, 0.374);
-    color: black; */
+    /* background-color: #343456; */
+    background-color: rgba(255, 255, 255, 0.374);
+    color: black;
 }
 #navicons{
     /* background-color: #245d51; */
-    background-color: #343456;
+    /* background-color: #343456; */
+    background-color: rgba(255, 255, 255, 0.374);
 }
 #btnnav{
     background-color: #ff6652;

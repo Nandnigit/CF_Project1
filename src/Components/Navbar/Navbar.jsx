@@ -21,11 +21,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="px-5 py-5 flex justify-center ">
+      <nav className="px-7 py-5 flex  ">
         <div className="container flex justify-between items-center">
           <div className="flex gap-4">
             <div>
-              <img src={logo} className="w-full h-16  rounded-full shadow-lg shadow-purple-500" alt="Logo" />
+              <img src={logo} className="w-full h-16 rounded-md shadow-lg shadow-purple-800" alt="Logo" />
             </div>
             <div className="hidden md:block">
               <a href="#course">
@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex md:gap-4 items-center ">
             <div className="relative">
-              <button onClick={() => toggleDropdown('home')} className="text-white hover:text-gray-300 text-xl">
+              <button onClick={() => toggleDropdown('home')} className="text-black hover:text-gray-300 text-xl">
                 Home<i className="fa fa-caret-down p-2"></i>
               </button>
               {dropdownOpen === 'home' && (
@@ -49,7 +49,7 @@ const Navbar = () => {
               )}
             </div>
             <div className="relative">
-              <button onClick={() => toggleDropdown('pages')} className="text-white hover:text-gray-300 text-xl">
+              <button onClick={() => toggleDropdown('pages')} className="text-black hover:text-gray-300 text-xl">
                 Pages<i className="fa fa-caret-down p-2"></i>
               </button>
               {dropdownOpen === 'pages' && (
@@ -64,7 +64,7 @@ const Navbar = () => {
               )}
             </div>
             <div className="relative">
-              <button onClick={() => toggleDropdown('instructor')} className="text-white hover:text-gray-300 text-xl">
+              <button onClick={() => toggleDropdown('instructor')} className="text-black hover:text-gray-300 text-xl">
                 Instructor<i className="fa fa-caret-down p-2"></i>
               </button>
               {dropdownOpen === 'instructor' && (
@@ -75,7 +75,7 @@ const Navbar = () => {
               )}
             </div>
             <div className="relative">
-              <button onClick={() => toggleDropdown('courses')} className="text-white hover:text-gray-300 text-xl">
+              <button onClick={() => toggleDropdown('courses')} className="text-black hover:text-gray-300 text-xl">
                 Courses<i className="fa fa-caret-down p-2"></i>
               </button>
               {dropdownOpen === 'courses' && (
@@ -87,7 +87,7 @@ const Navbar = () => {
               )}
             </div>
             <div className="relative">
-              <button onClick={() => toggleDropdown('blog')} className="text-white hover:text-gray-300 text-xl">
+              <button onClick={() => toggleDropdown('blog')} className="text-black hover:text-gray-300 text-xl">
                 Blog<i className="fa fa-caret-down p-2"></i>
               </button>
               {dropdownOpen === 'blog' && (
@@ -100,14 +100,14 @@ const Navbar = () => {
               )}
             </div>
             <div className="relative">
-              <input type="search" placeholder="Search Courses" className="bg-white rounded-full px-3 py-3 pl-10" />
+              <input type="search" placeholder="Search Courses" className="bg-white border-2 rounded-full px-3 py-3 pl-10" />
               <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M10 2a8 8 0 106.32 13.906l4.387 4.386a1 1 0 01-1.414 1.415l-4.386-4.387A8 8 0 1010 2zM4 10a6 6 0 1111.5 3.134A8.038 8.038 0 0010 16a8.038 8.038 0 00-4.5-2.866A6 6 0 014 10z" clipRule="evenodd"></path>
               </svg>
             </div>
             <div className="flex gap-2" id='navicons'>
-              <i className="fa-solid fa-user  px-3 py-3 rounded-full text-white hover:bg-orange-600 hover:border-orange-600"></i>
-              <i className="fa-solid fa-bag-shopping px-3  hover:bg-orange-600 py-3 rounded-full hover:border-orange-600 text-white"></i>
+              <i className="fa-solid fa-user  px-3 py-3 rounded-full text-black hover:bg-orange-600 hover:border-orange-600 border-2"></i>
+              <i className="fa-solid fa-bag-shopping px-3  hover:bg-orange-600 py-3 rounded-full hover:border-orange-600 text-black border-2"></i>
             </div>
           </div>
           <button className="md:hidden" onClick={toggleMenu}>
