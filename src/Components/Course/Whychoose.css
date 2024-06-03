@@ -46,13 +46,13 @@
   
   .top {
     top: 10%;
-    left: 0;
+    left: 15%;
     animation-name: slideInTop;
   }
   
   .bottom {
     bottom: 29%;
-    right: 0;
+    right: 10%;
     animation-name: slideInBottom;
   }
   

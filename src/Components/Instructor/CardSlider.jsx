@@ -72,15 +72,18 @@ const CardSlider = ({ cards }) => {
     <div className="overflow-hidden rounded-lg">
       <img src={card.img} alt={card.name} className="w-full h-full object-cover mb-2 rounded-lg transition-all duration-300" />
       <div className="absolute inset-0 flex flex-col justify-center items-end bg-white  bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-300">
-        <div className=" flex flex-col gap-6">
-          <a href="#" className="text-orange-500 border-2 px-3 py-3 bg-white rounded-full hover:text-orange-500">
+        <div className=" flex flex-col gap-3 px-8">
+          <a href="#" className="text-orange-500 border-2 px-2 py-2 bg-white rounded-full hover:text-orange-500">
             <i className="fab fa-facebook fa-2x"></i>
           </a>
-          <a href="#" className="text-orange-500 border-2 px-3 py-3 bg-white rounded-full hover:text-orange-500">
+          <a href="#" className="text-orange-500 border-2 px-2 py-2 bg-white rounded-full hover:text-orange-500">
             <i className="fab fa-twitter fa-2x"></i>
           </a>
-          <a href="#" className="text-orange-500 border-2 px-3 py-3 bg-white rounded-full hover:text-orange-500">
+          <a href="#" className="text-orange-500 border-2 px-2 py-2 bg-white rounded-full hover:text-orange-500">
             <i className="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#" className="text-orange-500 border-2 px-2 py-2 bg-white rounded-full hover:text-orange-500">
+            <i class="fa-brands fa-youtube fa-2x"></i>
           </a>
         </div>
       </div>

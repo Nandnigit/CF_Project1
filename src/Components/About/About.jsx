@@ -10,7 +10,7 @@ const AboutOurCourses = () => {
         <div className="flex flex-col md:flex-row gap-5 px-3  md:px-28">
           
           
-          <div className="relative px-10">
+          <div className="relative px-10 py-9">
       <img
         src="https://e-pora-next.vercel.app/assets/img/about/about-img.png"
         alt="Student"
@@ -23,19 +23,33 @@ const AboutOurCourses = () => {
           className="object-cover h-auto w-full "
         />
       </div>
+      <div className=" hidden md:block absolute -left-1 top-2/4">
+        <img
+          src="https://e-pora-next.vercel.app/assets/img/about/about-shape-04.png"
+          alt="Student with Globe"
+          className="object-cover h-auto w-full "
+        />
+      </div>
+      <div className=" hidden md:block absolute -top-2 right-0">
+        <img
+          src="https://e-pora-next.vercel.app/assets/img/about/about-shape-05.png"
+          alt="Student with Globe"
+          className="object-cover h-auto w-full "
+        />
+      </div>
       
     </div>
 
-    <div className="hidden md:block py-56">
+    <div className="hidden md:block py-56 h-32">
         <img
           src="https://e-pora-next.vercel.app/assets/img/about/about-shape-02.png"
           alt="Female Student"
-          className="object-cover"
+          className="object-cover w-full h-auto"
         />
       </div>
 
           <div className=" flex flex-col gap-3 ">
-            <h2 className="text-3xl font-bold text-orange-500 mb-4">
+            <h2 className="text-3xl font-semibold text-orange-500 mb-4">
               About Our Courses
             </h2>
             <h1 className=' font-bold text-4xl'>Explore Thousands of Creative Classes.</h1>
