@@ -10,17 +10,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleDropdown = (menu) => {
-
-   setDropdownOpen((prev) => (prev === menu ? null : menu));
-  };
-  console.log(dropdownOpen)
-
-  // const closeMenu = () => {
-  //   setIsOpen(false);
-  //   setDropdownOpen(null);
-  // };
-
+ const toggleDropdown = (menu) => {
+  setDropdownOpen((prev) => (prev === menu ? null : menu));
+};
+  
   return (
     <>
       <nav className="px-7 py-5 flex  ">
@@ -53,7 +46,7 @@ const Navbar = () => {
             </div>
             <div className="relative">
               <button  className="text-white hover:text-gray-300 text-xl">
-                superminds
+                Uniqueminds
               </button>
               
             </div>
