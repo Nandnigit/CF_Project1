@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import logo from './logo.png';
+import logo from './logo1.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,42 +17,64 @@ const Navbar = () => {
   return (
     <>
       <nav className="px-7 py-5 flex  ">
-        <div className="container flex justify-between items-center">
-          <div className="flex gap-4">
+        <div className="container flex gap-3 items-center">
+          
             <div>
-              <img src={logo} className="w-full h-16 rounded-md px-10" alt="Logo" />
+              <img src={logo} className="w-full h-16 rounded-md px-10 " alt="Logo" />
             </div>
+          
+          <div className="hidden md:flex md:gap-3 items-center ">
+
+            <div className="relative">
+              <button  className="text-white hover:text-yellow-300 font-semibold text-xl">
+                SuperMinds
+              </button>
+              
+            </div>
+            <div className="relative">
+              <button  className="text-white hover:text-yellow-300 font-semibold text-xl">
+                CreativeMinds
+              </button>
+              
+            </div>
+            <div className="relative">
+              <button  className="text-white hover:text-yellow-300 font-semibold text-xl">
+                MasterMinds
+              </button>
+              
+            </div>
+            <div className="relative">
+              <button  className="text-white hover:text-yellow-300 font-semibold text-xl">
+                UniqueMinds
+              </button>
+              
+            </div>
+
             
+
+            <div className="relative">
+              <input type="search" placeholder="Search Courses" className="bg-white border-2 rounded-full px-3 py-3 pl-10" />
+              <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" d="M10 2a8 8 0 106.32 13.906l4.387 4.386a1 1 0 01-1.414 1.415l-4.386-4.387A8 8 0 1010 2zM4 10a6 6 0 1111.5 3.134A8.038 8.038 0 0010 16a8.038 8.038 0 00-4.5-2.866A6 6 0 014 10z" clipRule="evenodd"></path>
+              </svg>
+            </div>
+
+            
+            
+
+            <div className="flex gap-2" id='navicons'>
+              <i className="fa-solid fa-user  px-3 py-3 rounded-full text-white hover:bg-orange-600 hover:border-orange-600 "></i>
+              <i className="fa-solid fa-bag-shopping px-3  hover:bg-orange-600 py-3 rounded-full hover:border-orange-600 text-white "></i>
+            </div>
           </div>
-          <div className="hidden md:flex md:gap-4 items-center ">
+          <button className="md:hidden" onClick={toggleMenu}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
+            </svg>
+          </button>
 
-            <div className="relative">
-              <button  className="text-white hover:text-gray-300 text-xl">
-                Superminds
-              </button>
-              
-            </div>
-            <div className="relative">
-              <button  className="text-white hover:text-gray-300 text-xl">
-                Creativeminds
-              </button>
-              
-            </div>
-            <div className="relative">
-              <button  className="text-white hover:text-gray-300 text-xl">
-                Masterminds
-              </button>
-              
-            </div>
-            <div className="relative">
-              <button  className="text-white hover:text-gray-300 text-xl">
-                Uniqueminds
-              </button>
-              
-            </div>
-
-            <div className="">
-              <button onClick={() => toggleDropdown('pages')} className="text-white hover:text-gray-300 text-xl">
+          <div className="">
+              <button onClick={() => toggleDropdown('pages')} className="text-white hover:text-yellow-300 text-xl font-semibold">
                 More<i className="fa fa-caret-down p-2"></i>
               </button>
               {dropdownOpen === 'pages' && (
@@ -111,27 +133,6 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-
-            <div className="relative">
-              <input type="search" placeholder="Search Courses" className="bg-white border-2 rounded-full px-3 py-3 pl-10" />
-              <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" d="M10 2a8 8 0 106.32 13.906l4.387 4.386a1 1 0 01-1.414 1.415l-4.386-4.387A8 8 0 1010 2zM4 10a6 6 0 1111.5 3.134A8.038 8.038 0 0010 16a8.038 8.038 0 00-4.5-2.866A6 6 0 014 10z" clipRule="evenodd"></path>
-              </svg>
-            </div>
-
-            
-            
-
-            <div className="flex gap-2" id='navicons'>
-              <i className="fa-solid fa-user  px-3 py-3 rounded-full text-white hover:bg-orange-600 hover:border-orange-600 "></i>
-              <i className="fa-solid fa-bag-shopping px-3  hover:bg-orange-600 py-3 rounded-full hover:border-orange-600 text-white "></i>
-            </div>
-          </div>
-          <button className="md:hidden" onClick={toggleMenu}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
-            </svg>
-          </button>
         </div>
         {isOpen && (
           <div className="md:hidden">

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import logo from './logo_copy.png'
+import logo from './logo1.png'
 import newlogo from './newlogo.png'
 import newlogo1 from './newlogo1.png'
 import copywrite from './copywrite.jpg'
@@ -60,13 +60,13 @@ function Footer() {
         </div>
         <hr/>
         <div className=' flex flex-col md:flex-row justify-around py-14 px-28'>
-          <img src={logo} className='w-auto h-16 rounded-md '/>
+          <img src={logo} className='w-auto h-20 rounded-md '/>
           
-          <div className=' flex gap-2 justify-center items-center text-xl text-white'>
+          <div className=' flex gap-2 font-semibold justify-center items-center text-xl text-white'>
           Copyright<span className=''><img src={copywrite} className=' h-5 w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved  | SBE DBE Logo
           
 </div>
-<div className=' flex '>
+<div className=' flex py-4 '>
           <img src={newlogo} className='w-auto h-12'/>
             <img src={newlogo1} className='w-auto h-12'/>
           </div>
