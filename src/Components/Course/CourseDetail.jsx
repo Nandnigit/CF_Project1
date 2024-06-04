@@ -60,9 +60,9 @@ const CourseDetail = ({ course }) => {
   </div>
 </div> */}
 
-<div className="flex flex-col h-[500px] justify-between gap-4 border-2 px-2 py-4 rounded-xl border-white shadow-md shadow-slate-400 card-container" id="cardcourse">
-  <img src={card.img} className="w-[100%] h-[50%] card-image" alt="Course" />
-  <div className="flex gap-2">
+<div className="flex flex-col h-[500px] justify-between gap-4 border-2 px-2 py-2 rounded-xl border-white shadow-md shadow-slate-400 card-container" id="cardcourse">
+  <img src={card.img} className="w-full h-[300px] card-image rounded-md" alt="Course" />
+  <div className="flex gap-1 items-center">
     <img src={card.icon} alt="Icon" />
     <p className="text-2xl font-bold">{card.title}</p>
   </div>

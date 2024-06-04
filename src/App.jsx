@@ -8,6 +8,7 @@ import Course from './Components/Course/Course'
 import WhyChooseUsComp from './Components/Course/WhyChooseUsComp'
 import AboutOurCourses from './Components/About/About'
 import Categrories from './Components/Top Categories/Categrories'
+import Login from './Components/Login/Login'
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
     <WhyChooseUsComp/>
     <Instructor/>
       <Footer/>
+      {/* <Login/> */}
     </>
   )
 }

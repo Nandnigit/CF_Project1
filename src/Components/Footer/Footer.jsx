@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import logo from './logo.jpg'
+import logo from './logo_copy.png'
 import newlogo from './newlogo.png'
 import newlogo1 from './newlogo1.png'
 import copywrite from './copywrite.jpg'
@@ -9,7 +9,7 @@ function Footer() {
   return (
     <>
       <div className='w-full h-full flex flex-col align-middle m-auto ' id='footer'>
-        <div className='  text-black flex flex-col md:flex-row justify-evenly py-24 border-2'>
+        <div className='  text-white flex flex-col md:flex-row justify-evenly py-24'>
             <div className=' m-3 flex flex-col md:flex-row justify-evenly gap-3 md:gap-16'> 
             <div>
                 <div className=' text-xl flex flex-col gap-3' >
@@ -62,7 +62,7 @@ function Footer() {
         <div className=' flex flex-col md:flex-row justify-around py-14 px-28'>
           <img src={logo} className='w-auto h-16 rounded-md '/>
           
-          <div className=' flex gap-2 justify-center items-center text-xl text-black'>
+          <div className=' flex gap-2 justify-center items-center text-xl text-white'>
           Copyright<span className=''><img src={copywrite} className=' h-5 w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved  | SBE DBE Logo
           
 </div>
