@@ -17,44 +17,44 @@ const Navbar = () => {
   return (
     <>
       <nav className="px-7 py-5 flex  ">
-        <div className="container flex gap-3 items-center">
+        <div className="container flex gap-3  items-center">
           
             <div>
-              <img src={logo} className="w-full h-16 rounded-md px-10 " alt="Logo" />
+              <img src={logo} className="w-full h-8 md:h-16 rounded-md md:px-10 " alt="Logo" />
             </div>
           
           <div className="hidden md:flex md:gap-3 items-center ">
 
-            {/* <div className="relative">
-              <div  className="text-white hover:text-yellow-300 font-semibold text-xl">
-                SuperMinds
-                <div className="hidden hover:visible bg-slate-300 ">
-                Embark on your academic journey with UltraAura, where we provide a diverse range of undergraduate programs tailored to equip you with the knowledge and skills necessary for success. Our interactive courses and experienced faculty ensure you gain a solid foundation and practical insights to excel in your chosen field.
-                </div>
-              </div>
-              
-            </div> */}
+            
             <div className="relative group text-white hover:text-yellow-300 font-semibold text-xl">
   SuperMinds
-  <div className="absolute hidden group-hover:block text-black bg-semi-transparent w-[580px] p-4 mt-2 rounded shadow-lg">
+  <div className="absolute hidden font-normal text-lg group-hover:block text-black bg-semi-transparent w-[400px] p-4 mt-2 rounded shadow-2xl">
+    <span className=' font-semibold'>For Undergraduates:</span>
+    <br/>
     Embark on your academic journey with UltraAura, where we provide a diverse range of undergraduate programs tailored to equip you with the knowledge and skills necessary for success. Our interactive courses and experienced faculty ensure you gain a solid foundation and practical insights to excel in your chosen field.
   </div>
 </div>
 
 <div className="relative group text-white hover:text-yellow-300 font-semibold text-xl">
   UniqueMinds
-  <div className="absolute hidden group-hover:block text-black bg-semi-transparent w-[580px] p-4 mt-2 rounded shadow-lg">
+  <div className="absolute hidden font-normal text-lg group-hover:block text-black bg-semi-transparent w-[400px] p-4 mt-2 rounded shadow-2xl">
+    <span className=' font-semibold'>For Graduates:</span>
+  <br/>
   Advance your expertise and career prospects with UltraAura's graduate programs. Designed for in-depth learning and professional growth, our courses offer advanced theories, practical applications, and research opportunities, all guided by industry-leading experts. Elevate your qualifications and open doors to new career opportunities.
   </div>
 </div>
 <div className="relative group text-white hover:text-yellow-300 font-semibold text-xl">
   MasterMinds
-  <div className="absolute hidden group-hover:block text-black bg-semi-transparent w-[580px] p-4 mt-2 rounded shadow-lg">
+  <div className="absolute hidden font-normal text-lg group-hover:block text-black bg-semi-transparent w-[400px] p-4 mt-2 rounded shadow-2xl">
+    <span className=' font-semibold'>For Professionals:</span>
+  <br/>
   Stay competitive in today’s fast-paced job market with UltraAura’s professional development courses. Our flexible, career-oriented programs are designed to fit your busy schedule, allowing you to upgrade your skills, acquire new certifications, and stay ahead in your field without compromising your work-life balance.  </div>
 </div>
 <div className="relative group text-white hover:text-yellow-300 font-semibold text-xl">
   CreativeMinds
-  <div className="absolute hidden group-hover:block text-black bg-semi-transparent w-[580px] p-4 mt-2 rounded shadow-lg">
+  <div className="absolute hidden font-normal text-lg group-hover:block text-black bg-semi-transparent w-[400px] p-4 mt-2 rounded shadow-2xl">
+    <span className=' font-semibold'>For Home Services:</span>
+  <br/>
   Master your trade with UltraAura’s specialized courses for home services professionals. Whether you're an electrician, plumber, or other skilled tradesperson, our practical training and certification programs are crafted to enhance your expertise, ensure compliance with industry standards, and boost your career growth in the home services sector.  </div>
 </div>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
             </svg>
           </button>
 
-          <div className="">
+          <div className="hidden md:block">
               <button onClick={() => toggleDropdown('pages')} className="text-white hover:text-yellow-300 text-xl font-semibold">
                 More<i className="fa fa-caret-down p-2"></i>
               </button>
