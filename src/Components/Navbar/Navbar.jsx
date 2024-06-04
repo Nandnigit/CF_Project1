@@ -291,13 +291,7 @@ const Navbar = () => {
               <i className="fa-solid fa-user px-3 py-3 rounded-full text-white hover:bg-orange-600 hover:border-orange-600"></i>
               <i className="fa-solid fa-bag-shopping px-3 hover:bg-orange-600 py-3 rounded-full hover:border-orange-600 text-white"></i>
             </div>
-          </div>
-          <button className="md:hidden" onClick={toggleMenu}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
-            </svg>
-          </button>
-          <div className="hidden md:block relative">
+            <div className="hidden md:block relative">
         <button onClick={() => toggleDropdown('pages', 'level1')} className="text-white hover:text-yellow-300 text-xl font-semibold">
           More<i className="fa fa-caret-down p-2"></i>
         </button>
@@ -354,6 +348,14 @@ const Navbar = () => {
           </div>
         )}
       </div>
+          </div>
+
+          <button className="md:hidden" onClick={toggleMenu}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
+            </svg>
+          </button>
+          
         </div>
         {isOpen && (
           <div className="md:hidden flex flex-col justify-between ">
