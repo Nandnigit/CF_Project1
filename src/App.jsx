@@ -25,6 +25,8 @@ function App() {
     <WhyChooseUsComp/>
     <Instructor/>
       <Footer/>
+    
+    
       {/* <Login/> */}
     </>
   )
