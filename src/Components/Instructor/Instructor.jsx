@@ -22,7 +22,7 @@ function Instructor(props) {
   return (
     <>
 
-      <h1 className="text-5xl font-bold px-36 my-8">Our Expert Instructor</h1>
+      <h1 className="text-5xl font-bold px-5 md:px-36 my-8">Our Expert Instructor</h1>
       <CardSlider cards={cards} />
       <div className=' flex justify-center'>
       <button className='  hover:bg-black text-white px-4 py-4 rounded-xl text-center' id='btnhome'>All Instructor</button>
