@@ -54,8 +54,8 @@ const AboutOurCourses = () => {
             <h2 className="text-2xl font-semibold  mb-4" id="spanele">
               About Our Courses
             </h2>
-            <h1 className=' font-bold text-5xl'>Explore Thousands of Creative Classes.</h1>
-            <p className="text-gray-600 mb-8">
+            <h1 className=' font-bold text-5xl px-3'>Explore Thousands of Creative Classes.</h1>
+            <p className="text-gray-600 mb-8 px-3">
               Dramatically supply transparent deliverables beforese backward comp
               internal or "organic" sources. Comp transparent leverage other.
             </p>

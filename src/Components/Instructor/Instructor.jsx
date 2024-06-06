@@ -57,7 +57,7 @@ function Instructor(props) {
         
       </div>
   <div className=' py-6 '>
-  <h1 className="text-5xl font-bold px-36 my-8">Student Testimonials</h1>
+  <h1 className="text-5xl font-bold px-4 md:px-36 my-8">Student Testimonials</h1>
   <div className=''>
   <SecondCardSlider secondcards={secondcards} />
   </div>
