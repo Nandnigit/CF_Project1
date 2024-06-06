@@ -1,17 +1,4 @@
-/* #cardcourse:hover{
-     @apply relative flex items-center justify-center m-3 overflow-hidden shadow-xl rounded-2xl;
-      
-} */
-/* #cardcourse:hover img.zoomable {
-     transform: scale(1.1);
-     
-     padding: 0;
-   }
-   
-   #cardcourse img.zoomable {
-     transition: transform 0.3s ease-in-out;
-   } */
-   
+
    .card-container {
     position: relative;
     overflow: hidden;
