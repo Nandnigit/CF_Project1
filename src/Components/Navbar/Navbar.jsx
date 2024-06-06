@@ -244,9 +244,9 @@ const Navbar = () => {
       <nav className="px-7 py-5 flex">
         <div className="container flex gap-3 items-center justify-between ">
           <div>
-            <img src={logo} className="w-full h-8 md:h-16 rounded-md md:px-10" alt="Logo" />
+            <img src={logo} className="w-full h-8 md:h-20 rounded-md md:px-10" alt="Logo" />
           </div>
-          <div className="hidden md:flex md:gap-3 items-center ">
+          <div className="hidden md:flex  items-center ">
             <div className="relative group px-2 border-r-2 text-white hover:text-yellow-300 font-semibold text-xl">
               SuperMinds
               <div className="absolute hidden font-normal text-base group-hover:block text-black  w-[400px] p-4 mt-2 rounded-xl shadow-2xl" id='navlinks'>
@@ -273,6 +273,14 @@ const Navbar = () => {
             </div>
             <div className="relative group px-2 border-r-2 text-white  hover:text-yellow-300 font-semibold text-xl">
               CreativeMinds
+              <div className="absolute hidden font-normal text-base group-hover:block text-black bg-white w-[400px] p-4 mt-2 rounded-xl shadow-2xl" id='navlinks'>
+                <span className="font-semibold">For Home Services:</span>
+                <br />
+                Master your trade with UltraAura’s specialized courses for home services professionals. Whether you're an electrician, plumber, or other skilled tradesperson, our practical training and certification programs are crafted to enhance your expertise, ensure compliance with industry standards, and boost your career growth in the home services sector.
+              </div>
+            </div>
+            <div className="relative group px-2  text-white  hover:text-yellow-300 font-semibold text-xl">
+              SpecialMinds
               <div className="absolute hidden font-normal text-base group-hover:block text-black bg-white w-[400px] p-4 mt-2 rounded-xl shadow-2xl" id='navlinks'>
                 <span className="font-semibold">For Home Services:</span>
                 <br />
