@@ -6,7 +6,7 @@ function WhyChooseUsComp() {
   return (
     <>
      
-        <div className='bg-white py-9 px-6 md:px-16'>
+        <div className='bg-white  py-9 px-6 md:px-32'>
   <div className='flex flex-col gap-3 md:flex-row md:gap-40 px-6 align-middle relative'>
     <div className='relative '>
       <img src="https://e-pora-next.vercel.app/assets/img/bg/choose-img-01.jpg" alt="Choose" className=' h-auto w-full object-cover'/>

@@ -5,7 +5,7 @@ import '../Home_part/HomeFirstPart.css'
 const Categroiesdetails=({category})=> {
   return (
     <>
-    <div className='  rounded-md py-20' id='detail'>
+    <div className='  rounded-md px-14 py-20' id='detail'>
     <h1 className=' font-bold text-center text-5xl py-9'>Top Categories</h1>
       <div className=' flex flex-wrap gap-2 md:grid md:grid-cols-4 md:gap-4 px-5 md:px-16 py-11 ' >
         {category.map((card,index)=>(

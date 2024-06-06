@@ -5,7 +5,7 @@ import './ProvideCards.css'
 const ProvideCards = ({provideecards}) => {
   return (
     <>
-      <div className=' flex flex-col md:flex-row' >
+      <div className=' flex flex-col md:flex-row px-12' >
       {provideecards.map((card, index) => (
           
 <div key={index} className="p-4">
