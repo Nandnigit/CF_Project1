@@ -1,5 +1,6 @@
 import React from 'react'
 import './Categoriesdetail.css'
+import '../Home_part/HomeFirstPart.css'
 
 const Categroiesdetails=({category})=> {
   return (
@@ -12,7 +13,7 @@ const Categroiesdetails=({category})=> {
             <div key={index}>
   <div className="flex gap-5 rounded-xl border-2 px-5 py-7 border-white bg-white shadow-lg shadow-slate-300 flip-container">
     <div className="flip">
-      <img src={card.icon} className="h-7 w-7" alt="Icon" />
+      <img src={card.icon} className="h-7 w-7" id='spanele' alt="Icon" />
     </div>
     <div className="font-semibold text-2xl hover:text-orange-500">{card.title}</div>
   </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Whychoose.css'
+import '../Home_part/HomeFirstPart.css'
 
 function WhyChooseUsComp() {
   return (
@@ -23,13 +24,13 @@ function WhyChooseUsComp() {
     </div>
     <div className=' md:w-[35%]' id='iocnsdiv'>
       <div className='flex flex-col gap-2 py-28'>
-        <p className='text-orange-600 text-left font-semibold text-xl'>Why Choose Us</p>
+        <p className=' text-left font-semibold text-xl' id='spanele'>Why Choose Us</p>
         <h1 className='text-5xl font-bold'>Why You Choose Our E-Pora Online learning</h1>
         <p className='text-slate-600'>Dramatically supply transparent deliverables before & can backward comp internal or "organic" sources.</p>
         <p className='font-semibold text-black '><i className="fa-solid fa-check border-2 px-3 py-3 rounded-full  text-white hover:bg-orange-500 m-2 "></i>Increasing Your Learning Skills</p>
         <p className='font-semibold text-black'><i className="fa-solid fa-check border-2 px-3 py-3 rounded-full  text-white hover:bg-orange-500 m-2"></i>High Quality Video & Audio Classes</p>
         <p className='font-semibold text-black'><i className="fa-solid fa-check border-2 px-3 py-3 rounded-full  text-white hover:bg-orange-500 m-2"></i>Finish Your Course, Get Certificate</p>
-        <button className='px-3 py-3 md:w-[40%] rounded-lg font-semibold  text-white' id="btnnav">
+        <button className='px-3 py-3 md:w-[40%] rounded-lg font-semibold  text-white' id="btnhome">
           Explore Courses
         </button>
       </div>

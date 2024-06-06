@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import '../Home_part/HomeFirstPart.css'
 
 
 const AboutOurCourses = () => {
@@ -50,7 +51,7 @@ const AboutOurCourses = () => {
     
 
           <div className=" flex flex-col gap-5 md:w-[45%] md:py-36">
-            <h2 className="text-2xl font-semibold text-orange-500 mb-4">
+            <h2 className="text-2xl font-semibold  mb-4" id="spanele">
               About Our Courses
             </h2>
             <h1 className=' font-bold text-5xl'>Explore Thousands of Creative Classes.</h1>
@@ -58,7 +59,7 @@ const AboutOurCourses = () => {
               Dramatically supply transparent deliverables beforese backward comp
               internal or "organic" sources. Comp transparent leverage other.
             </p>
-            <button className=" text-white py-5 px-4 rounded-md md:w-[30%]" id='btnnav'>
+            <button className=" text-white py-5 px-4 rounded-md md:w-[30%]" id='btnhome'>
               Read More
             </button>
           </div>

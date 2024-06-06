@@ -8,8 +8,14 @@ nav{
     background-color: #245c51;
     
 }
+#navlinks{
+  background-color: rgba(255, 255, 255, 0.537);
+}
+#navicons i:hover{
+  background-color:#C59035 ;
+}
 #btnnav{
-    background-color: #ff6652;
+    background-color:#C59035 ;
 } 
 .navbar {
     position: relative;
@@ -54,6 +60,7 @@ nav{
   
   .navbar .bg-gray-800 {
     background-color: #2d3748;
+    
   }
   
   .navbar .hover\\:bg-blue-700:hover {

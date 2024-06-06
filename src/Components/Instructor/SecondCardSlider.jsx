@@ -69,7 +69,7 @@ const SecondCardSlider = ({ secondcards }) => {
                 <div><i className="fa-solid fa-star text-yellow-500"></i></div>
                 <div><i className="fa-solid fa-star text-yellow-500"></i></div>
                 <div><i className="fa-solid fa-star text-yellow-500"></i></div>
-                <div><i className="fa-regular fa-star text-yellow-500"></i></div>
+                <div><i className="fa-solid fa-star text-yellow-500"></i></div>
               </div>
                 </div>
               

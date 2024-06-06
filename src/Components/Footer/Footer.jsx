@@ -3,7 +3,9 @@ import "./Footer.css"
 import logo from './logo1.png'
 import newlogo from './newlogo.png'
 import newlogo1 from './newlogo1.png'
-import copywrite from './copywrite.jpg'
+import copywrite from './copywrite.png'
+import '../About/About.css'
+import '../Home_part/HomeFirstPart.css'
 
 function Footer() {
   return (
@@ -47,13 +49,13 @@ function Footer() {
             <div>Be the first one to know about discounts, offers and events. Unsubscribe whenever you like.</div>
             <div className=' flex border-2 rounded-2xl bg-white justify-between py-1'>
                 <input type="search" placeholder=' enter your email' className=' rounded-2xl sm:px-3 py-2'/>
-                <button className=' rounded-2xl md:rounded-full border-2 border-orange-500 px-1 sm:px-2 py-2 bg-orange-500 hover:bg-white hover:text-orange-500 font-medium sm:mx-4'>Subscribe Now</button>
+                <button className=' rounded-2xl md:rounded-full px-1 sm:px-2 py-2  hover:bg-white hover:text-black font-medium sm:mx-4' id='btnhome'>Subscribe Now</button>
             </div>
             <div className=' flex gap-2 text-xl'>
-                <div><i className="fa-brands fa-facebook border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white hover:bg-orange-500"></i></div>
-                <div><i className="fa-brands fa-youtube border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white hover:bg-orange-500"></i></div>
-                <div><i className="fa-solid fa-globe border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white hover:bg-orange-500"></i></div>
-                <div><i className="fa-brands fa-whatsapp border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white hover:bg-orange-500"></i></div>
+                <div><i className="fa-brands fa-facebook border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
+                <div><i className="fa-brands fa-youtube border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
+                <div><i className="fa-solid fa-globe border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
+                <div><i className="fa-brands fa-whatsapp border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
             </div>
             
             </div>
@@ -62,8 +64,8 @@ function Footer() {
         <div className=' flex flex-col md:flex-row justify-around py-14 px-28'>
           <img src={logo} className='w-auto h-20 rounded-md '/>
           
-          <div className=' flex gap-2 font-semibold justify-center items-center text-xl text-white'>
-          Copyright<span className=''><img src={copywrite} className=' h-5 w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved  | SBE DBE Logo
+          <div className=' flex gap-2 font-semibold justify-center items-center text-lg text-white'>
+          Copyright<span className=''><img src={copywrite} className=' h-5 w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved 
           
 </div>
 <div className=' flex py-4 '>

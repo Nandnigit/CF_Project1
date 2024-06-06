@@ -242,56 +242,56 @@ const Navbar = () => {
   return (
     <>
       <nav className="px-7 py-5 flex">
-        <div className="container flex gap-3 items-center justify-between">
+        <div className="container flex gap-3 items-center justify-between ">
           <div>
             <img src={logo} className="w-full h-8 md:h-16 rounded-md md:px-10" alt="Logo" />
           </div>
-          <div className="hidden md:flex md:gap-3 items-center">
-            <div className="relative group text-white hover:text-yellow-300 font-semibold text-xl">
+          <div className="hidden md:flex md:gap-3 items-center ">
+            <div className="relative group px-2 border-r-2 text-white hover:text-yellow-300 font-semibold text-xl">
               SuperMinds
-              <div className="absolute hidden font-normal text-lg group-hover:block text-black bg-semi-transparent w-[400px] p-4 mt-2 rounded shadow-2xl">
+              <div className="absolute hidden font-normal text-base group-hover:block text-black  w-[400px] p-4 mt-2 rounded-xl shadow-2xl" id='navlinks'>
                 <span className="font-semibold">For Undergraduates:</span>
                 <br />
                 Embark on your academic journey with UltraAura, where we provide a diverse range of undergraduate programs tailored to equip you with the knowledge and skills necessary for success. Our interactive courses and experienced faculty ensure you gain a solid foundation and practical insights to excel in your chosen field.
               </div>
             </div>
-            <div className="relative group text-white hover:text-yellow-300 font-semibold text-xl">
+            <div className="relative group px-2 border-r-2 text-white hover:text-yellow-300 font-semibold text-xl">
               UniqueMinds
-              <div className="absolute hidden font-normal text-lg group-hover:block text-black bg-semi-transparent w-[400px] p-4 mt-2 rounded shadow-2xl">
+              <div className="absolute hidden font-normal text-base group-hover:block text-black bg-white w-[400px] p-4 mt-2 rounded-xl shadow-2xl" id='navlinks'>
                 <span className="font-semibold">For Graduates:</span>
                 <br />
                 Advance your expertise and career prospects with UltraAura's graduate programs. Designed for in-depth learning and professional growth, our courses offer advanced theories, practical applications, and research opportunities, all guided by industry-leading experts. Elevate your qualifications and open doors to new career opportunities.
               </div>
             </div>
-            <div className="relative group text-white hover:text-yellow-300 font-semibold text-xl">
+            <div className="relative group px-2 border-r-2 text-white hover:text-yellow-300 font-semibold text-xl">
               MasterMinds
-              <div className="absolute hidden font-normal text-lg group-hover:block text-black bg-semi-transparent w-[400px] p-4 mt-2 rounded shadow-2xl">
+              <div className="absolute hidden font-normal text-base group-hover:block text-black bg-white w-[400px] p-4 mt-2 rounded-xl shadow-2xl" id='navlinks'>
                 <span className="font-semibold">For Professionals:</span>
                 <br />
                 Stay competitive in today’s fast-paced job market with UltraAura’s professional development courses. Our flexible, career-oriented programs are designed to fit your busy schedule, allowing you to upgrade your skills, acquire new certifications, and stay ahead in your field without compromising your work-life balance.
               </div>
             </div>
-            <div className="relative group text-white hover:text-yellow-300 font-semibold text-xl">
+            <div className="relative group px-2 border-r-2 text-white  hover:text-yellow-300 font-semibold text-xl">
               CreativeMinds
-              <div className="absolute hidden font-normal text-lg group-hover:block text-black bg-semi-transparent w-[400px] p-4 mt-2 rounded shadow-2xl">
+              <div className="absolute hidden font-normal text-base group-hover:block text-black bg-white w-[400px] p-4 mt-2 rounded-xl shadow-2xl" id='navlinks'>
                 <span className="font-semibold">For Home Services:</span>
                 <br />
                 Master your trade with UltraAura’s specialized courses for home services professionals. Whether you're an electrician, plumber, or other skilled tradesperson, our practical training and certification programs are crafted to enhance your expertise, ensure compliance with industry standards, and boost your career growth in the home services sector.
               </div>
             </div>
 
-            <div className="relative">
+            {/* <div className="relative">
               <input type="search" placeholder="Search Courses" className="bg-white border-2 rounded-full px-3 py-3 pl-10" />
               <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M10 2a8 8 0 106.32 13.906l4.387 4.386a1 1 0 01-1.414 1.415l-4.386-4.387A8 8 0 1010 2zM4 10a6 6 0 1111.5 3.134A8.038 8.038 0 0010 16a8.038 8.038 0 00-4.5-2.866A6 6 0 014 10z" clipRule="evenodd"></path>
               </svg>
-            </div>
+            </div> */}
 
             <div className="flex gap-2" id="navicons">
-              <i className="fa-solid fa-user px-3 py-3 rounded-full text-white hover:bg-orange-600 hover:border-orange-600"></i>
-              <i className="fa-solid fa-bag-shopping px-3 hover:bg-orange-600 py-3 rounded-full hover:border-orange-600 text-white"></i>
+              <i className="fa-solid fa-user px-3 py-3 rounded-full text-white "></i>
+              <i className="fa-solid fa-bag-shopping px-3  py-3 rounded-full text-white" ></i>
             </div>
-            <div className="hidden md:block relative">
+            {/* <div className="hidden md:block relative">
         <button onClick={() => toggleDropdown('pages', 'level1')} className="text-white hover:text-yellow-300 text-xl font-semibold">
           More<i className="fa fa-caret-down p-2"></i>
         </button>
@@ -347,7 +347,7 @@ const Navbar = () => {
             </div>
           </div>
         )}
-      </div>
+      </div> */}
           </div>
 
           <button className="md:hidden" onClick={toggleMenu}>

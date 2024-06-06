@@ -1,6 +1,7 @@
 import React from 'react'
 import ProvideCards from './ProvideCards'
 import './ProvideCards.css'
+import './HomeFirstPart.css'
 
 function HomeSecondPart(props) {
     const provideecards=[
@@ -20,7 +21,7 @@ function HomeSecondPart(props) {
   return (
     <>
       <div className=' flex flex-col gap-5 justify-center text-center py-24 px-5 md:px-16' id="provideCards">
-            <div className=' text-orange-500 text-xl font-semibold py-5'>What we Offer</div>
+            <div className=' text-xl font-semibold py-5' id="spanele">What we Offer</div>
             <div className=' font-bold text-5xl'> For Your Future Learning.</div>
             <ProvideCards provideecards={provideecards}/>
         </div>
