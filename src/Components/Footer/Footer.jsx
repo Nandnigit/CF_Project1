@@ -3,7 +3,7 @@ import "./Footer.css"
 import logo from './logo1.png'
 import newlogo from './newlogo.png'
 import newlogo1 from './newlogo1.png'
-import copywrite from './copywrite.png'
+import copywrite from './copywrite.jpg'
 import '../About/About.css'
 import '../Home_part/HomeFirstPart.css'
 
@@ -64,7 +64,7 @@ function Footer() {
         <div className=' flex flex-col md:flex-row justify-around py-14 px-28'>
           <img src={logo} className='w-auto h-20 rounded-md '/>
           
-          <div className=' flex gap-2 font-semibold justify-center items-center text-lg text-white'>
+          <div className=' flex gap-2 justify-center items-center text-base text-white'>
           Copyright<span className=''><img src={copywrite} className=' h-5 w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved 
           
 </div>
