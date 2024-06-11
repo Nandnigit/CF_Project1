@@ -16,7 +16,7 @@ function App() {
   return (
     <>
     
-    <Navbar/> 
+    
     <HomeFirstPart/>
     <HomeSecondPart/>
     <AboutOurCourses/>
@@ -24,7 +24,7 @@ function App() {
     <Course/>
     <WhyChooseUsComp/>
     <Instructor/>
-      <Footer/>
+      
     
     
       {/* <Login/> */}
