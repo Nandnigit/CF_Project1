@@ -230,7 +230,12 @@ function Signup() {
         const response = await axios.post(
           url,
           formData,
-          { withCredentials: true }
+          { withCredentials: true },
+          {
+            headers: {
+            'Content-Type': 'application/json',
+          }
+        }
         );
         if (response.status === 201) {
           toast.success("Signed up successfully!");

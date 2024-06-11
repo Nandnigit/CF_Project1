@@ -278,7 +278,12 @@ function Login() {
         const response = await axios.post(
           url,
           formData,
-          { withCredentials: true }
+           {withCredentials: true },
+          {
+            headers: {
+            'Content-Type': 'application/json',
+          }
+        }
         );
         if (response.status === 201) {
           toast.success("Logged-in successfully!");
@@ -287,17 +292,6 @@ function Login() {
           toast.error("Failed to log in.");
         }
         console.log("login Response", response);
-
-        // Store token and user data in localStorage
-        // localStorage.setItem('token', JSON.stringify(response.data.token));
-        // localStorage.setItem('userid', JSON.stringify({
-        //   id: response.data.data._id,
-        //   name: response.data.data.username
-        // }));
-
-        // Update context
-        // userId.setID(response.data.token);
-        // userId.setname(response.data.data.username);
       } catch (err) {
         console.log(err);
         toast.error("An error occurred. Please try again.");
