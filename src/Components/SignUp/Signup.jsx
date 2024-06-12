@@ -642,6 +642,7 @@ function Signup() {
           );
           console.log(response);
           setStates(Array.isArray(response.data) ? response.data : []);
+          console.log(states)
         } catch (error) {
           console.error('Error fetching states:', error);
         }
