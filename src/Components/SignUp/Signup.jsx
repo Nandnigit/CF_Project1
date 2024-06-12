@@ -19,7 +19,7 @@ function Signup() {
     qualificationId: '',
   });
 
-  const [countries, setCountries] = useState({});
+  const [countries, setCountries] = useState([]);
   const [states, setStates] = useState([]);
   const [cities, setCities] = useState([]);
   const [qualifications, setQualifications] = useState([]);
@@ -88,7 +88,7 @@ function Signup() {
         );
         console.log("res",response.data.data[0] );
         setCountries(response.data.data);
-        console.log(countries);
+        
         // console.log(countries.id)
       } catch (error) {
         console.error('Error fetching countries:', error);
@@ -96,7 +96,7 @@ function Signup() {
     };
     fetchCountries();
   }, [role]);
-
+  console.log(countries);
   useEffect(() => {
     if (registerValues.countryId) {
       const fetchStates = async () => {
