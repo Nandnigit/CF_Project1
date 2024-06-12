@@ -386,7 +386,7 @@ function Login() {
           url,
           formData,
           {
-            withCredentials: true,
+            // withCredentials: true,
             headers: {
               'Content-Type': 'application/json',
             },
