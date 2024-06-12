@@ -99,7 +99,7 @@ function Signup() {
   // console.log(countries.id);
   console.log(registerValues.countryId)
   useEffect(() => {
-    if (registerValues.countryId) {
+    // if (registerValues.countryId) {
       const fetchStates = async () => {
         try {
           const response = await axios.get(
@@ -108,17 +108,18 @@ function Signup() {
 
           console.log("states",response.data.data);
           setStates(Array.isArray(response.data.data) ? response.data : []);
-          console.log(states)
+          
         } catch (error) {
           console.error('Error fetching states:', error);
         }
       };
       fetchStates();
     }
-  }, [registerValues.countryId, role]);
+  , [registerValues.countryId, role]);
+  console.log(states);
 
   useEffect(() => {
-    if (registerValues.stateId) {
+    // if (registerValues.stateId) {
       const fetchCities = async () => {
         try {
           const response = await axios.get(
@@ -132,7 +133,7 @@ function Signup() {
       };
       fetchCities();
     }
-  }, [registerValues.stateId, role]);
+  , [registerValues.stateId, role]);
    console.log(cities,states);
 
   useEffect(() => {
