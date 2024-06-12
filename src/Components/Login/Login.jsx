@@ -377,13 +377,14 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     const url = role === "student" ? "/api/students/login" : "/api/trainers/login";
-
+    console.log(url);
     if (!formData.email || !formData.password) {
       toast.error("Email and Password are required");
     } else {
       try {
         const response = await axios.post(
           url,
+          
           formData,
           {
             // withCredentials: true,
