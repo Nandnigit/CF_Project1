@@ -629,10 +629,10 @@ function Signup() {
     email: '',
     phone: '',
     password: '',
-    country_id: '',
-    state_id: '',
-    city_id: '',
-    qualification_id: '',
+    country_id: 0,
+    state_id: 0,
+    city_id: 0,
+    qualification_id: 0,
   });
 
   const [countries, setCountries] = useState([]);
