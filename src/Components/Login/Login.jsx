@@ -376,7 +376,7 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const url = role === "student" ? "/api/students/login" : "/api/trainers/login";
+    const url = role === "student" ? "https://novajobs.us/api/students/login" : "https://novajobs.us/api/trainers/login";
     console.log(url);
     if (!formData.email || !formData.password) {
       toast.error("Email and Password are required");
