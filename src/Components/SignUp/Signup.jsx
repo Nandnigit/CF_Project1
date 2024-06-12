@@ -412,7 +412,7 @@ function Signup() {
       const fetchStates = async () => {
         try {
           const response = await axios.get(
-            role === 'student' ? `https://novajobs.us/api/students/states/231` : `https://novajobs.us/api/trainers/states/231`
+            role === 'student' ? `https://novajobs.us/api/students/stats/231` : `https://novajobs.us/api/trainers/stats/231`
           );
           console.log('States Response:', response.data.data);
           setStates(response.data.data);
