@@ -86,8 +86,8 @@ function Signup() {
         const response = await axios.get(
           role === 'student' ? 'https://novajobs.us/api/students/countries' : 'https://novajobs.us/api/trainers/countries'
         );
-        console.log("res",response.data.data );
-        setCountries(response.data.data);
+        console.log("res",response.data.data[0] );
+        setCountries(response.data.data[0]);
         console.log(countries);
         // console.log(countries.id)
       } catch (error) {
