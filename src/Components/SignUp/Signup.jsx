@@ -377,7 +377,7 @@ function Signup() {
 
       console.log('Response:', response);
 
-      if (response.status === 201) {
+      if (response.status === 200) {
         toast.success('Signed up successfully!');
         navigate('/login');
       } else {
