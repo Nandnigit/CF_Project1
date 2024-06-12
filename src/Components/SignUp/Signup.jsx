@@ -96,7 +96,7 @@ function Signup() {
     };
     fetchCountries();
   }, [role]);
-  console.log(countries.id);
+  // console.log(countries.id);
   useEffect(() => {
     if (registerValues.countryId) {
       const fetchStates = async () => {
@@ -104,7 +104,7 @@ function Signup() {
           const response = await axios.get(
             role === 'student' ? `https://novajobs.us/api/students/stats/231` : `https://novajobs.us/api/trainers/stats/231`
           );
-          console.log(response);
+          console.log("states",response.data.data);
           setStates(Array.isArray(response.data.data) ? response.data : []);
           console.log(states)
         } catch (error) {
@@ -120,8 +120,9 @@ function Signup() {
       const fetchCities = async () => {
         try {
           const response = await axios.get(
-            role === 'student' ? `https://novajobs.us/api/students/cities/${registerValues.stateId}` : `https://novajobs.us/api/trainers/cities/${registerValues.stateId}`
+            role === 'student' ? `https://novajobs.us/api/students/cities/3919` : `https://novajobs.us/api/trainers/cities/3919`
           );
+          console.log("cities",response.data.data)
           setCities(Array.isArray(response.data) ? response.data : []);
         } catch (error) {
           console.error('Error fetching cities:', error);
