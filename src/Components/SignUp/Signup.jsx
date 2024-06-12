@@ -624,15 +624,15 @@ import axios from 'axios';
 function Signup() {
   const [role, setRole] = useState('student');
   const [registerValues, setRegisterValues] = useState({
-    firstName: '',
-    lastName: '',
+    first_name: '',
+    last_name: '',
     email: '',
     phone: '',
     password: '',
-    countryId: '',
-    stateId: '',
-    cityId: '',
-    qualificationId: '',
+    country_id: '',
+    state_id: '',
+    city_id: '',
+    qualification_id: '',
   });
 
   const [countries, setCountries] = useState([]);
@@ -656,15 +656,15 @@ function Signup() {
     }
 
     const body = {
-      firstName: registerValues.firstName,
-      lastName: registerValues.lastName,
+      first_name: registerValues.first_name,
+      last_name: registerValues.last_name,
       email: registerValues.email,
       phone: registerValues.phone,
       password: registerValues.password,
-      countryId: registerValues.countryId,
-      stateId: registerValues.stateId,
-      cityId: registerValues.cityId,
-      qualificationId: role === 'student' ? registerValues.qualificationId : undefined,
+      country_id: registerValues.country_id,
+      state_id: registerValues.state_id,
+      city_id: registerValues.city_id,
+      qualification_id: role === 'student' ? registerValues.qualification_id : undefined,
     };
 
     try {
@@ -719,11 +719,11 @@ function Signup() {
   }, [role]);
 
   useEffect(() => {
-    if (registerValues.countryId) {
+    if (registerValues.country_id) {
       const fetchStates = async () => {
         try {
           const response = await axios.get(
-            role === 'student' ? `https://novajobs.us/api/students/stats/231` : `https://novajobs.us/api/trainers/stats/231`
+            role === 'student' ? `https://novajobs.us/api/students/states/231` : `https://novajobs.us/api/trainers/states/231`
           );
           console.log('States Response:', response.data.data);
           setStates(response.data.data);
@@ -733,10 +733,10 @@ function Signup() {
       };
       fetchStates();
     }
-  }, [registerValues.countryId, role]);
+  }, [registerValues.country_id, role]);
 
   useEffect(() => {
-    if (registerValues.stateId) {
+    if (registerValues.state_id) {
       const fetchCities = async () => {
         try {
           const response = await axios.get(
@@ -750,7 +750,7 @@ function Signup() {
       };
       fetchCities();
     }
-  }, [registerValues.stateId, role]);
+  }, [registerValues.state_id, role]);
 
   useEffect(() => {
     if (role === 'student') {
@@ -792,8 +792,8 @@ function Signup() {
               <label className='block text-white'>First Name</label>
               <input
                 type='text'
-                name='firstName'
-                value={registerValues.firstName}
+                name='first_name'
+                value={registerValues.first_name}
                 onChange={handleRegisterChange}
                 className='w-full px-3 py-2 border rounded-md'
                 placeholder='Enter your First Name'
@@ -803,8 +803,8 @@ function Signup() {
               <label className='block text-white'>Last Name</label>
               <input
                 type='text'
-                name='lastName'
-                value={registerValues.lastName}
+                name='last_name'
+                value={registerValues.last_name}
                 onChange={handleRegisterChange}
                 className='w-full px-3 py-2 border rounded-md'
                 placeholder='Enter your Last Name'
@@ -846,8 +846,8 @@ function Signup() {
             <div className='mb-4'>
               <label className='block text-white'>Country</label>
               <select
-                name='countryId'
-                value={registerValues.countryId}
+                name='country_id'
+                value={registerValues.country_id}
                 onChange={handleRegisterChange}
                 className='w-full px-3 py-2 border rounded-md'
               >
@@ -862,8 +862,8 @@ function Signup() {
             <div className='mb-4'>
               <label className='block text-white'>State</label>
               <select
-                name='stateId'
-                value={registerValues.stateId}
+                name='state_id'
+                value={registerValues.state_id}
                 onChange={handleRegisterChange}
                 className='w-full px-3 py-2 border rounded-md'
               >
@@ -878,8 +878,8 @@ function Signup() {
             <div className='mb-4'>
               <label className='block text-white'>City</label>
               <select
-                name='cityId'
-                value={registerValues.cityId}
+                name='city_id'
+                value={registerValues.city_id}
                 onChange={handleRegisterChange}
                 className='w-full px-3 py-2 border rounded-md'
               >
@@ -896,8 +896,8 @@ function Signup() {
               <div className='mb-4'>
                 <label className='block text-white'>Qualification</label>
                 <select
-                  name='qualificationId'
-                  value={registerValues.qualificationId}
+                  name='qualification_id'
+                  value={registerValues.qualification_id}
                   onChange={handleRegisterChange}
                   className='w-full px-3 py-2 border rounded-md'
                 >
