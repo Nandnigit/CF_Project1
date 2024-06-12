@@ -97,6 +97,7 @@ function Signup() {
     fetchCountries();
   }, [role]);
   // console.log(countries.id);
+  console.log(registerValues.countryId)
   useEffect(() => {
     if (registerValues.countryId) {
       const fetchStates = async () => {
@@ -104,6 +105,7 @@ function Signup() {
           const response = await axios.get(
             role === 'student' ? `https://novajobs.us/api/students/stats/231` : `https://novajobs.us/api/trainers/stats/231`
           );
+
           console.log("states",response.data.data);
           setStates(Array.isArray(response.data.data) ? response.data : []);
           console.log(states)
