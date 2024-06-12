@@ -104,7 +104,7 @@ function Signup() {
             role === 'student' ? `https://novajobs.us/api/students/stats/231` : `https://novajobs.us/api/trainers/stats/231`
           );
           console.log(response);
-          setStates(Array.isArray(response.data) ? response.data : []);
+          setStates(Array.isArray(response.data.data) ? response.data : []);
           console.log(states)
         } catch (error) {
           console.error('Error fetching states:', error);
