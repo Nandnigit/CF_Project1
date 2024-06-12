@@ -384,7 +384,7 @@ function Login() {
       try {
         const response = await axios.post(
           url,
-          JSON.stringify(formData),
+          formData,
           {
             withCredentials: true,
             headers: {
