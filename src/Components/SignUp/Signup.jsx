@@ -141,7 +141,7 @@ function Signup() {
       const fetchQualifications = async () => {
         try {
           const response = await axios.get('https://novajobs.us/api/students/qualifications');
-          setQualifications(Array.isArray(response.data) ? response.data : []);
+          setQualifications(response.data.data);
         } catch (error) {
           console.error('Error fetching qualifications:', error);
         }
