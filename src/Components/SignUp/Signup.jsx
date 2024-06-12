@@ -19,7 +19,7 @@ function Signup() {
     qualificationId: '',
   });
 
-  const [countries, setCountries] = useState([]);
+  const [countries, setCountries] = useState({});
   const [states, setStates] = useState([]);
   const [cities, setCities] = useState([]);
   const [qualifications, setQualifications] = useState([]);
