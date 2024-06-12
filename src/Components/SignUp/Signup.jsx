@@ -107,7 +107,7 @@ function Signup() {
           );
 
           console.log("states",response.data.data);
-          setStates(Array.isArray(response.data.data) ? response.data : []);
+          setStates(response.data.data);
           
         } catch (error) {
           console.error('Error fetching states:', error);
@@ -126,7 +126,7 @@ function Signup() {
             role === 'student' ? `https://novajobs.us/api/students/cities/3919` : `https://novajobs.us/api/trainers/cities/3919`
           );
           console.log("cities",response.data.data)
-          setCities(Array.isArray(response.data) ? response.data : []);
+          setCities(response.data.data);
         } catch (error) {
           console.error('Error fetching cities:', error);
         }
