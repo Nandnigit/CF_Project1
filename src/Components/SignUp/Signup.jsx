@@ -636,7 +636,7 @@ function Signup() {
       const fetchStates = async () => {
         try {
           const response = await axios.get(
-            role === 'student' ? `https://novajobs.us/api/students/stats/231` : `https://novajobs.us/api/trainers/stats/231`
+            role === 'student' ? `https://novajobs.us/api/students/stats/${registerValues.countryId}` : `https://novajobs.us/api/trainers/stats/${registerValues.countryId}`
           );
           console.log(response);
           setStates(Array.isArray(response.data) ? response.data : []);
@@ -653,7 +653,7 @@ function Signup() {
       const fetchCities = async () => {
         try {
           const response = await axios.get(
-            role === 'student' ? `https://novajobs.us/api/students/cities/3919` : `https://novajobs.us/api/trainers/cities/3919`
+            role === 'student' ? `https://novajobs.us/api/students/cities/${registerValues.stateId}` : `https://novajobs.us/api/trainers/cities/${registerValues.stateId}`
           );
           setCities(Array.isArray(response.data) ? response.data : []);
         } catch (error) {
