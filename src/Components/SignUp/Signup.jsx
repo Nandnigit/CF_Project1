@@ -333,6 +333,7 @@ function Signup() {
           const response = await axios.get(
             role === 'student' ? `https://novajobs.us/api/students/stats/231` : `https://novajobs.us/api/trainers/stats/231`
           );
+          console.log(response);
           setStates(Array.isArray(response.data) ? response.data : []);
         } catch (error) {
           console.error('Error fetching states:', error);
@@ -350,6 +351,7 @@ function Signup() {
             role === 'student' ? `https://novajobs.us/api/students/cities/3919` : `https://novajobs.us/api/trainers/cities/3919`
           );
           setCities(Array.isArray(response.data) ? response.data : []);
+
         } catch (error) {
           console.error('Error fetching cities:', error);
         }
@@ -357,6 +359,7 @@ function Signup() {
       fetchCities();
     }
   }, [registerValues.stateId, role]);
+   console.log(cities,states);
 
   useEffect(() => {
     if (role === 'student') {
