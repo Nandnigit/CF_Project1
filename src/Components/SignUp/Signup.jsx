@@ -87,9 +87,9 @@ function Signup() {
           role === 'student' ? 'https://novajobs.us/api/students/countries' : 'https://novajobs.us/api/trainers/countries'
         );
         console.log("res",response.data.data );
-        setCountries(Array.isArray(response.data) ? response.data.data : []);
+        setCountries(response.data.data ? response.data.data : []);
         console.log(countries);
-        console.log(countries.id)
+        // console.log(countries.id)
       } catch (error) {
         console.error('Error fetching countries:', error);
       }
