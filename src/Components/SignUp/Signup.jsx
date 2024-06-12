@@ -96,7 +96,7 @@ function Signup() {
     };
     fetchCountries();
   }, [role]);
-  console.log(countries);
+  console.log(countries.id);
   useEffect(() => {
     if (registerValues.countryId) {
       const fetchStates = async () => {
