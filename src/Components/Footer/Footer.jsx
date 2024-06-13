@@ -50,7 +50,7 @@ function Footer() {
             <div className=' m-3 flex flex-col gap-4 md:w-[30%]'> 
             <div className=' font-bold text-2xl'>Support</div>
             <div>Be the first one to know about discounts, offers and events. Unsubscribe whenever you like.</div>
-            <div className=' flex border-2 rounded-2xl md:justify-between bg-white  py-1'>
+            <div className=' flex border-2 rounded-2xl justify-between bg-white  py-1'>
                 <input type="search" placeholder=' Enter your Email' className=' rounded-2xl md:px-2 w-[170px] py-2'/>
                 <button className=' rounded-xl px-1 py-1 hover:bg-white hover:text-black font-normal sm:mx-2' id='btnhome'>Subscribe Now</button>
             </div>
@@ -69,12 +69,12 @@ function Footer() {
         </div>
         <hr/>
         <div className=' flex flex-col md:flex-row justify-evenly py-14 px-1 md:px-14'>
-          <img src={logo} className='w-auto h-16 md:h-20 rounded-md '/>
+          <img src={logo} className='w-full md:w-auto h-20 md:h-20 rounded-md '/>
           
           {/* <div className=' flex gap-2 items-center  text-base text-white'>
           Copyright<span className=' border-2'><img src={copywrite} className=' h-4 w-4 md:h-5 md:w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved 
           </div> */}
-          <div className=' flex flex-wrap gap-1 text-white items-center text-base '>
+          <div className=' flex flex-wrap gap-1 text-white items-center text-lg '>
             <div>Copywrite</div> <div><img src={copywrite} className=' h-4 w-4 md:h-5 md:w-auto bg-transparent'/></div><div>By Hyper V Solutions</div> <div>|</div> <div>All Rights Reserved</div>
           </div>
 <div className=' flex py-4 '>
