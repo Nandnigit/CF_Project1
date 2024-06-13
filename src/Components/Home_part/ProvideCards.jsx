@@ -5,11 +5,11 @@ import './ProvideCards.css'
 const ProvideCards = ({provideecards}) => {
   return (
     <>
-      <div className=' flex flex-col md:flex-row px-4 md:px-12' >
+      <div className=' flex flex-col md:flex-row px-2 md:px-12' >
       {provideecards.map((card, index) => (
           
 <div key={index} className="p-4">
-  <div className="bg-white border-2 border-white rounded-lg shadow-lg flex flex-col gap-4 p-6 card-container">
+  <div className="bg-white border-2 border-white py-3 w-[250px] rounded-lg shadow-xl shadow-gray-600 flex flex-col gap-4 px-2 md:p-6 card-container">
     <div className="border-2 px-6 py-5 rounded-full w-fit   text-white hover:bg-orange-500 lift-up" id='imgprovide'>
       <i className={card.img}></i>
     </div>

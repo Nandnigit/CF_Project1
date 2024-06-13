@@ -6,7 +6,7 @@ function WhyChooseUsComp() {
   return (
     <>
      
-        <div className='bg-white  py-9 px-6 md:px-32'>
+        <div className='bg-white  py-9 px-1 md:px-32'>
   <div className='flex flex-col gap-3 md:flex-row md:gap-40 px-6 align-middle relative'>
     <div className='relative '>
       <img src="https://e-pora-next.vercel.app/assets/img/bg/choose-img-01.jpg" alt="Choose" className=' h-auto w-full object-cover'/>
@@ -23,9 +23,9 @@ function WhyChooseUsComp() {
       </div>
     </div>
     <div className=' md:w-[35%]' id='iocnsdiv'>
-      <div className='flex flex-col gap-2 py-28'>
+      <div className='flex flex-col gap-2 py-5 md:py-28'>
         <p className=' text-left font-semibold text-xl' id='spanele'>Why Choose Us</p>
-        <h1 className='text-5xl font-bold'>Why You Choose Our E-Pora Online learning</h1>
+        <h1 className='md:text-5xl text-3xl font-bold'>Why You Choose Our E-Pora Online learning</h1>
         <p className='text-slate-600'>Dramatically supply transparent deliverables before & can backward comp internal or "organic" sources.</p>
         <p className='font-semibold text-black '><i className="fa-solid fa-check border-2 px-3 py-3 rounded-full  text-white hover:bg-orange-500 m-2 "></i>Increasing Your Learning Skills</p>
         <p className='font-semibold text-black'><i className="fa-solid fa-check border-2 px-3 py-3 rounded-full  text-white hover:bg-orange-500 m-2"></i>High Quality Video & Audio Classes</p>

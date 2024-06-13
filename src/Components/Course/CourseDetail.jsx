@@ -7,7 +7,7 @@ const CourseDetail = ({ course }) => {
   return (
     <>
     <div id="course">
-    <h1 className=" text-5xl font-bold text-left px-5 md:px-36 py-5">Explore Popular Courses</h1>
+    <h1 className=" text-3xl md:text-5xl font-bold text-left px-5 md:px-36 py-2 md:py-5">Explore Popular Courses</h1>
       <div className="  px-5 md:px-36 py-5 bg-white text-black md:grid md:grid-cols-3 gap-3 ">
         
         {course.map((card, index) => (

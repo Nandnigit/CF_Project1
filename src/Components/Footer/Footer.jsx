@@ -10,12 +10,12 @@ import '../Home_part/HomeFirstPart.css'
 function Footer() {
   return (
     <>
-      <div className='w-full h-full flex flex-col align-middle m-auto ' id='footer'>
-        <div className='  text-white flex flex-col md:flex-row justify-evenly py-24'>
+      <div className='w-full h-full flex flex-col items-center align-middle m-auto ' id='footer'>
+        <div className='  text-white flex flex-col items-center md:flex-row justify-evenly py-24'>
             <div className=' m-3 flex flex-col md:flex-row justify-evenly gap-3 md:gap-16'> 
             <div>
                 <div className=' text-xl flex flex-col gap-3' >
-                    <div className=' font-semibold text-2xl'>About</div>
+                    <div className=' font-bold text-2xl'>About</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>About Us</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>Blog</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>Careers</div>
@@ -25,7 +25,7 @@ function Footer() {
             </div>
             <div>
                 <div className=' text-xl flex flex-col gap-3' >
-                    <div className=' font-semibold text-2xl'>Quick Links</div>
+                    <div className=' font-bold text-2xl'>Quick Links</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>Refund Policy</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>Documentation</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>Chat Online</div>
@@ -35,7 +35,7 @@ function Footer() {
             </div>
             <div>
                 <div className=' text-xl flex flex-col gap-3' >
-                    <div className=' font-semibold text-2xl'>Support</div>
+                    <div className=' font-bold text-2xl'>Support</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>Contact us</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>Online Chat</div>
                     <div className=' hover:text-orange-500 hover:pl-1'>Whatsapp</div>
@@ -49,7 +49,7 @@ function Footer() {
             <div>Be the first one to know about discounts, offers and events. Unsubscribe whenever you like.</div>
             <div className=' flex border-2 rounded-2xl bg-white justify-between py-1'>
                 <input type="search" placeholder=' enter your email' className=' rounded-2xl sm:px-3 py-2'/>
-                <button className=' rounded-2xl md:rounded-full px-1 sm:px-2 py-2  hover:bg-white hover:text-black font-medium sm:mx-4' id='btnhome'>Subscribe Now</button>
+                <button className=' rounded-2xl px-1 sm:px-2 py-2  hover:bg-white hover:text-black font-medium sm:mx-4' id='btnhome'>Subscribe Now</button>
             </div>
             <div className=' flex gap-2 text-xl'>
                 <div><i className="fa-brands fa-facebook border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
@@ -64,7 +64,7 @@ function Footer() {
         <div className=' flex flex-col md:flex-row justify-around py-14 px-28'>
           <img src={logo} className='w-auto h-20 rounded-md '/>
           
-          <div className=' flex gap-2 justify-center items-center text-base text-white'>
+          <div className=' flex gap-2 flex-wrap justify-center items-center text-base text-white'>
           Copyright<span className=''><img src={copywrite} className=' h-5 w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved 
           
 </div>
