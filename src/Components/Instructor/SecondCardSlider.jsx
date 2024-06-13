@@ -61,7 +61,7 @@ const SecondCardSlider = ({ secondcards }) => {
       <Slider {...settings}>
         {secondcards.map((card, index) => (
           <div key={index} className="p-4">
-            <div className="bg-white rounded-lg flex flex-col shadow-xl w-[250px] p-6">
+            <div className="bg-white rounded-lg flex flex-col shadow-xl  w-[250px] p-6">
                 <div className=' flex justify-between'>
                 <img src={card.img} alt={card.name} className=" h-24 w-24  object-cover mb-2 rounded-lg" />
               <div className=' flex gap-2 float-right'>

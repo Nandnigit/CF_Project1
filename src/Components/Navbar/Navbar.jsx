@@ -199,7 +199,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <Link to="/" className="">
-            <img src={logo} className="h-8 md:h-20 rounded-md" alt="Logo" />
+            <img src={logo} className="h-12 md:h-20 rounded-md" alt="Logo" />
           </Link>
 
           {/* Login icon for mobile */}

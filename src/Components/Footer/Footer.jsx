@@ -6,6 +6,9 @@ import newlogo1 from './newlogo1.png'
 import copywrite from './copywrite.jpg'
 import '../About/About.css'
 import '../Home_part/HomeFirstPart.css'
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -47,27 +50,33 @@ function Footer() {
             <div className=' m-3 flex flex-col gap-4 md:w-[30%]'> 
             <div className=' font-bold text-2xl'>Support</div>
             <div>Be the first one to know about discounts, offers and events. Unsubscribe whenever you like.</div>
-            <div className=' flex border-2 rounded-2xl bg-white justify-between py-1'>
-                <input type="search" placeholder=' enter your email' className=' rounded-2xl sm:px-3 py-2'/>
-                <button className=' rounded-2xl px-1 sm:px-2 py-2  hover:bg-white hover:text-black font-medium sm:mx-4' id='btnhome'>Subscribe Now</button>
+            <div className=' flex border-2 rounded-2xl md:justify-between bg-white  py-1'>
+                <input type="search" placeholder=' Enter your Email' className=' rounded-2xl md:px-2 w-[170px] py-2'/>
+                <button className=' rounded-xl px-1 py-1 hover:bg-white hover:text-black font-normal sm:mx-2' id='btnhome'>Subscribe Now</button>
             </div>
             <div className=' flex gap-2 text-xl'>
-                <div><i className="fa-brands fa-facebook border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
+            <FaLinkedinIn />
+            <FaFacebookSquare />
+            <FaYoutube />
+                {/* <div><i className="fa-brands fa-facebook border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
+                
                 <div><i className="fa-brands fa-youtube border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
                 <div><i className="fa-solid fa-globe border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
-                <div><i className="fa-brands fa-whatsapp border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div>
+                <div><i className="fa-brands fa-whatsapp border-2 px-1 py-1 rounded-full bg-white text-orange-500 hover:text-white " id='spanele'></i></div> */}
             </div>
             
             </div>
         </div>
         <hr/>
-        <div className=' flex flex-col md:flex-row justify-around py-14 px-28'>
-          <img src={logo} className='w-auto h-20 rounded-md '/>
+        <div className=' flex flex-col md:flex-row justify-evenly py-14 px-1 md:px-14'>
+          <img src={logo} className='w-auto h-16 md:h-20 rounded-md '/>
           
-          <div className=' flex gap-2 flex-wrap justify-center items-center text-base text-white'>
-          Copyright<span className=''><img src={copywrite} className=' h-5 w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved 
-          
-</div>
+          {/* <div className=' flex gap-2 items-center  text-base text-white'>
+          Copyright<span className=' border-2'><img src={copywrite} className=' h-4 w-4 md:h-5 md:w-auto bg-transparent'/></span> By Hyper V Solutions  |  All Rights Reserved 
+          </div> */}
+          <div className=' flex flex-wrap gap-1 text-white items-center text-base '>
+            <div>Copywrite</div> <div><img src={copywrite} className=' h-4 w-4 md:h-5 md:w-auto bg-transparent'/></div><div>By Hyper V Solutions</div> <div>|</div> <div>All Rights Reserved</div>
+          </div>
 <div className=' flex py-4 '>
           <img src={newlogo} className='w-auto h-12'/>
             <img src={newlogo1} className='w-auto h-12'/>
